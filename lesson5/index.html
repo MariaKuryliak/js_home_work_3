@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- 1 -->
+             <!-- var Point = {
+               x : 50,
+               y : 50,
+               GetQuadrant : function(x, y) {
+                   if (x > 0 && y > 0){
+                     alert("First!");
+                   } else if (x < 0 && y > 0 ){
+                     alert("Second!");
+                   } else if (x < 0 && y < 0){
+                     alert("Third!");
+                   } else if (x > 0 && y < 0){
+                     alert("Fourth!");
+                   }
+               }
+             };
+             Point.GetQuadrant(-5, -5);
+             console.log(Point.GetQuadrant(-5, -5));
+             // 2
+             var Calculator = {
+              
+                     sum : function(a, b){
+                        console.log(a + b);
+                     },
+                     substraction : function(a, b){
+                        console.log(a - b);
+                     },
+                     prod : function(a, b){
+                        console.log(a * b);
+                     },
+                     division : function(a, b){
+                        console.log(a / b);
+                     }
+   
+                 };
+   
+                 var a = +prompt('write a :');
+                 var b = +prompt('write b :');
+                 var sign = prompt('write sign :');
+                 switch (sign){
+                  case '+': console.log(Calculator.sum(a, b)); break;
+                  case '-': console.log(Calculator.substraction(a, b)); break;
+                  case '*': console.log(Calculator.prod(a, b)); break;
+                  case '/': console.log(Calculator.division(a, b)); break;
+                 } -->
+             <!-- 3 -->
+             <!-- index.html -->
+            <!-- <!DOCTYPE html> -->
+            <!-- <html lang="en">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+                <link rel="stylesheet" href="style.css">
+            </head>
+
+            <body>
+                <div class="wrapper">
+                    <form class="form" id="form" name="form">
+                        <input type="text" name="name" id="name" placeholder="Ім'я" required>
+                        <input type="text" name="sName" id="sName" placeholder="Прізвище" required>
+                        <input type="number" name="age" id="age" placeholder="Вік" required>
+                        <input type="text" name="occupation" id="occupation" placeholder="Посада" required>
+                        <input type="submit" value="Новий Співробітник">
+                    </form>
+                </div>
+
+                <script src="script.js"></script>
+            </body>
+
+            </html> -->
+             <!-- script.js -->
+
+                <!-- class Employe {
+                    constructor(name, sName, age, occupation){
+                        this.name = name;
+                        this.sName = sName;
+                        this.age = age;
+                        this.occupation = occupation;
+                    }
+
+                    show() { console.log(this); }
+                }
+
+                // Масив користувачів
+                const employes = [];
+
+                // Форма
+                const emloyerForm = document.forms['form'];
+
+                document.getElementById('form').addEventListener('submit', function(event) { 
+                    event.preventDefault(); 
+
+                    const newEmloyer = new Employe(emloyerForm.elements.name.value, emloyerForm.elements.sName.value, emloyerForm.elements.age.value, emloyerForm.elements.occupation.value) 
+                    employes.push(newEmloyer); 
+
+                    for(let i = 0; i < employes.length; i++){ 
+                        employes[i].show()
+                    }
+                }); -->
+                <!-- style.css -->
+                <!-- body{
+                    background-color: lightpink;
+                }
+                .wrapper{
+                    margin: 50px auto;
+                    background-color: lightcoral;
+                    max-width: 300px;
+                    padding: .5rem;
+                    border-radius: 4px;
+                }
+                
+                .form {
+                    display: flex;
+                    flex-direction: column ; 
+                }
+                
+                input {
+                    margin: .1rem ;
+                } -->
+                
+                
+
+
+
+</body>
+</html>
