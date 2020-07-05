@@ -212,9 +212,12 @@
             }
         ];
 
-        console.log(watchList);
-        var rating = watchList.map(function(rate){ return rate.title, rate.Rated});
-        console.log(rating);
+         console.log(watchList.map((item) => {
+                 return {
+                 "Title": item.Title,
+                 "imdbRating" : item.imdbRating
+                 }
+         }));
  -->
 
 	<!-- 7 -->
@@ -331,14 +334,7 @@
             }
         ];
 
-        var filteredList = watchList.filter(function (imdbRating){
-            return imdbRating > 8;
-        });
-
-        var filterL = watchList.map(function (rate){
-            return rate.title, rate.rating;
-        });
-        console.log(filteredList); 
+  console.log(watchList.filter(movie => +movie.imdbRating > 8).map(item => ({Title: item.Title, imdbRating: item.imdbRating})));
  -->
  <!-- 8 --><!-- 
  var watchList = [
@@ -453,12 +449,15 @@
                 "Response": "True"
             }
         ];
-        var AverageRating = watchList.reduce(function(sum,rate){
-            return sum + rate.imdbRating; 
-        },0);
-        
-        console.log(AverageRating);
+       let filmsByDirector = null;
+         console.log(watchList.filter(movie => movie['Director'] === 'Christopher Nolan').reduce((acc,item,idx,arr) => {
+             filmsByDirector = arr.length
+             return acc += +item.imdbRating},0) / filmsByDirector)
+
+             
+
  -->
+    <!-- Number(value) те саме, що +value або parseInt -->
 
 
 </body>
