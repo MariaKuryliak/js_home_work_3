@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+
+	<script>
+    var smoothJumpUp = function() {
+        if (document.body.scrollTop>20 || document.documentElement.scrollTop>30) {
+            window.scrollBy(0,-50);
+            setTimeout(smoothJumpUp, 20);
+        }
+    }
+    
+    window.onscroll = function() {
+      var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrolled > 100) {
+      	document.getElementById('upbutton').style.display = 'block';
+      } else {
+      	document.getElementById('upbutton').style.display = 'none';
+      }
+    }
+	</script>
+
+	<a id="upbutton" href="#" onclick="smoothJumpUp(); return false;">
+   	 	<img src="/images/up.png" alt="Top" border="none" title="Наверх">
+	</a>
+	
+</body>
+</html>
